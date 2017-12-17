@@ -32,6 +32,7 @@ public class MainmenuView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btngJeniskelamin = new javax.swing.ButtonGroup();
         menuPanel = new javax.swing.JPanel();
         Menu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -61,6 +62,23 @@ public class MainmenuView extends javax.swing.JFrame {
         btnPilih7 = new javax.swing.JButton();
         Rocket = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        txtRnama = new javax.swing.JTextField();
+        rbMale = new javax.swing.JRadioButton();
+        rbFemale = new javax.swing.JRadioButton();
+        jLabel15 = new javax.swing.JLabel();
+        cmbJurusan = new javax.swing.JComboBox<>();
+        jLabel16 = new javax.swing.JLabel();
+        cbxYa = new javax.swing.JCheckBox();
+        cbxTidak = new javax.swing.JCheckBox();
+        jLabel17 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        listArea = new javax.swing.JList<>();
+        jLabel18 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtOutput = new javax.swing.JTextArea();
+        btnSimpan = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -344,21 +362,128 @@ public class MainmenuView extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Coolvetica Rg", 0, 36)); // NOI18N
         jLabel12.setText("Let's go to space using a Rocket");
 
+        jLabel13.setText("Nama");
+
+        jLabel14.setText("Jenis Kelamin");
+
+        txtRnama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRnamaActionPerformed(evt);
+            }
+        });
+
+        rbMale.setText("Laki-Laki");
+
+        rbFemale.setText("Perempuan");
+        rbFemale.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbFemaleActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setText("Jurusan");
+
+        cmbJurusan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TEKNIK INFORMATIKA", "AKUNTANSI", "SISTEM INFORMASI", "TEKNIK KOMPUTER", "BAHASA INGGRIS", "DESAIN KOMUNIKASI VISUAL" }));
+
+        jLabel16.setText("Minat");
+
+        cbxYa.setText("Ya");
+
+        cbxTidak.setText("Tidak");
+
+        jLabel17.setText("List");
+
+        listArea.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(listArea);
+
+        jLabel18.setText("Output");
+
+        txtOutput.setColumns(20);
+        txtOutput.setRows(5);
+        jScrollPane2.setViewportView(txtOutput);
+
+        btnSimpan.setText("Simpan");
+        btnSimpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimpanActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout RocketLayout = new javax.swing.GroupLayout(Rocket);
         Rocket.setLayout(RocketLayout);
         RocketLayout.setHorizontalGroup(
             RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RocketLayout.createSequentialGroup()
                 .addGap(61, 61, 61)
-                .addComponent(jLabel12)
-                .addContainerGap(1627, Short.MAX_VALUE))
+                .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSimpan)
+                    .addComponent(jLabel12)
+                    .addGroup(RocketLayout.createSequentialGroup()
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(RocketLayout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addGap(51, 51, 51)
+                                .addComponent(txtRnama, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(RocketLayout.createSequentialGroup()
+                                .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel17))
+                                .addGap(18, 18, 18)
+                                .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cbxYa)
+                                    .addComponent(rbFemale)
+                                    .addComponent(rbMale)
+                                    .addComponent(cmbJurusan, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbxTidak)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(47, 47, 47)
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(1619, Short.MAX_VALUE))
         );
         RocketLayout.setVerticalGroup(
             RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RocketLayout.createSequentialGroup()
-                .addGap(117, 117, 117)
+                .addGap(47, 47, 47)
                 .addComponent(jLabel12)
-                .addContainerGap(416, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(txtRnama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18))
+                .addGap(18, 18, 18)
+                .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(RocketLayout.createSequentialGroup()
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(rbMale))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(rbFemale)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(cmbJurusan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel16)
+                            .addComponent(cbxYa))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cbxTidak)
+                        .addGap(18, 18, 18)
+                        .addGroup(RocketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel17)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addComponent(btnSimpan)
+                .addGap(71, 71, 71))
         );
 
         mainPanel.add(Rocket, "card4");
@@ -523,6 +648,64 @@ public class MainmenuView extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void txtRnamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRnamaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRnamaActionPerformed
+
+    private void rbFemaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbFemaleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbFemaleActionPerformed
+
+    private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
+        // TODO add your handling code here:
+        String nama, jenisKelamin = "", minat1 = "",minat2 = "", jurusan="";
+        String item ;
+                
+        nama = txtRnama.getText();
+
+        if(rbMale.isSelected()){
+            jenisKelamin = rbMale.getText();
+        }
+        else if(rbFemale.isSelected()){
+            jenisKelamin = rbFemale.getText();
+        }
+        
+        if(cmbJurusan.getSelectedItem()== "TEKNIK INFORMATIKA"){
+            jurusan = "TEKNIK INFORMATIKA";
+        }
+        else if(cmbJurusan.getSelectedItem()== "AKUNTANSI"){
+            jurusan = "AKUNTANSI";
+        }
+        else if(cmbJurusan.getSelectedItem()== "SISTEM INFORMASI"){
+            jurusan = "SISTEM INFORMASI";
+        }
+        else if(cmbJurusan.getSelectedItem()== "TEKNIK KOMPUTER"){
+            jurusan = "TEKNIK KOMPUTER";
+        }
+        else if(cmbJurusan.getSelectedItem()== "BAHASA INGGRIS"){
+            jurusan = "BAHASA INGGRIS";
+        }
+        else if(cmbJurusan.getSelectedItem()== "DESAIN KOMUNIKASI VISUAL"){
+            jurusan = "DESAIN KOMUNIKASI VISUAL";
+        }
+        
+        
+        if(this.cbxYa.isSelected()){
+            minat1= cbxYa.getText();
+        }
+        if(this.cbxTidak.isSelected()){
+            minat2= cbxTidak.getText();
+        }
+        
+        item = listArea.getSelectedValue();
+        txtOutput.setText("Nama : "+ nama +
+                "\nJenis Kelamin : "+ jenisKelamin+
+                "\nJurusan : "+ jurusan+
+                "\nMinat : "+ minat1+"  "+minat2+
+                "\nItem: "+ item);
+        
+    }//GEN-LAST:event_btnSimpanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -574,11 +757,22 @@ public class MainmenuView extends javax.swing.JFrame {
     private javax.swing.JLabel btnPlanet;
     private javax.swing.JLabel btnRocket1;
     private javax.swing.JLabel btnRocket3;
+    private javax.swing.JButton btnSimpan;
+    private javax.swing.ButtonGroup btngJeniskelamin;
+    private javax.swing.JCheckBox cbxTidak;
+    private javax.swing.JCheckBox cbxYa;
+    private javax.swing.JComboBox<String> cmbJurusan;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -587,7 +781,14 @@ public class MainmenuView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JList<String> listArea;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel menuPanel;
+    private javax.swing.JRadioButton rbFemale;
+    private javax.swing.JRadioButton rbMale;
+    private javax.swing.JTextArea txtOutput;
+    private javax.swing.JTextField txtRnama;
     // End of variables declaration//GEN-END:variables
 }
