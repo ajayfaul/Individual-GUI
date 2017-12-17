@@ -55,7 +55,7 @@ public class LoginView extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(236, 64, 122));
         jLabel6.setText("Go To Space With Us.");
 
-        imgRoket1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\roket.png")); // NOI18N
+        imgRoket1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/roket.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));

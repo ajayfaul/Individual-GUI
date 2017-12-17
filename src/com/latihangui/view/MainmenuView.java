@@ -93,7 +93,7 @@ public class MainmenuView extends javax.swing.JFrame {
 
         btnHome.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\Home_64px.png")); // NOI18N
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/Home_64px.png"))); // NOI18N
         btnHome.setText("Home");
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -103,7 +103,7 @@ public class MainmenuView extends javax.swing.JFrame {
 
         btnPlanet.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnPlanet.setForeground(new java.awt.Color(255, 255, 255));
-        btnPlanet.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\Planet_64px.png")); // NOI18N
+        btnPlanet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/Planet_64px.png"))); // NOI18N
         btnPlanet.setText("Planet");
         btnPlanet.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -113,7 +113,7 @@ public class MainmenuView extends javax.swing.JFrame {
 
         btnRocket1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnRocket1.setForeground(new java.awt.Color(255, 255, 255));
-        btnRocket1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\Rocket_64px.png")); // NOI18N
+        btnRocket1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/Rocket_64px.png"))); // NOI18N
         btnRocket1.setText("Rocket");
         btnRocket1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -123,7 +123,7 @@ public class MainmenuView extends javax.swing.JFrame {
 
         btnRocket3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnRocket3.setForeground(new java.awt.Color(255, 255, 255));
-        btnRocket3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\About_64px.png")); // NOI18N
+        btnRocket3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/About_64px.png"))); // NOI18N
         btnRocket3.setText("About");
         btnRocket3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -140,7 +140,7 @@ public class MainmenuView extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Our Home is Earth ");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\earth.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/earth.png"))); // NOI18N
 
         javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
         Home.setLayout(HomeLayout);
@@ -172,17 +172,17 @@ public class MainmenuView extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\venus.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/venus.jpg"))); // NOI18N
         jLabel5.setText("Venus");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\mars.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/mars.jpg"))); // NOI18N
         jLabel6.setText("Mars");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\merkurius.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/merkurius.jpg"))); // NOI18N
         jLabel7.setText("Merkurius");
 
         jLabel4.setFont(new java.awt.Font("Coolvetica Rg", 0, 18)); // NOI18N
@@ -212,7 +212,7 @@ public class MainmenuView extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\yupiter.jpg")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/yupiter.jpg"))); // NOI18N
         jLabel8.setText("Yupiter");
 
         btnPilih4.setText("Pilih");
@@ -224,17 +224,17 @@ public class MainmenuView extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\saturn.jpg")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/saturn.jpg"))); // NOI18N
         jLabel9.setText("Saturnus");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\uranus.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/uranus.jpg"))); // NOI18N
         jLabel10.setText("Uranus");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\neptun.jpg")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/neptun.jpg"))); // NOI18N
         jLabel11.setText("Neptunus");
 
         btnPilih5.setText("Pilih");
@@ -364,7 +364,7 @@ public class MainmenuView extends javax.swing.JFrame {
         mainPanel.add(Rocket, "card4");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ajayfaul\\Pictures\\Sign Out_32px.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/latihangui/iconpack/Sign Out_32px.png"))); // NOI18N
         jButton1.setText("Sign Out");
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
